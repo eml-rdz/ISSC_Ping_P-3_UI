@@ -32,4 +32,4 @@ Aplicación web de mensajería desarrollada como proyecto para la materia de Int
 
 - Emilio Rodríguez ~ 83042
 - Rodolfo Sandoval ~ 
-- Emilio Luna ~ 
+- Emilio Luna ~ 83355
