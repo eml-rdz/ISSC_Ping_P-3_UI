@@ -30,6 +30,6 @@ Aplicación web de mensajería desarrollada como proyecto para la materia de Int
 
 ## Autor
 
-**Emilio Rodríguez**
-**Rodolfo Sandoval**
-**Emilio Luna**
+- Emilio Rodríguez ~ 83042
+- Rodolfo Sandoval ~ 
+- Emilio Luna ~ 
