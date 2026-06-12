@@ -1,15 +1,35 @@
-# ---- WIP -----
+# 💬 Ping
 
-## Descripción de los archivos.
+Aplicación web de mensajería desarrollada como proyecto para la materia de Interfaz Gráfica.
 
-### index.html;
+---
 
-  Es la página principal de inicio de sesión de Ping. Contiene la interfaz donde el usuario ingresa sus credenciales y el botón para acceder a la  aplicación. En este proyecto su función es servir como punto de entrada y redirigir a la página principal.
+## Estructura del proyecto
 
-### home.html;
+| Archivo | Descripción |
+|----------|-------------|
+| `index.html` | Página de inicio de sesión. |
+| `home.html` | Página principal de la aplicación. |
+| `styles.css` | Contiene todos los estilos del proyecto. |
 
-  Corresponde a la página de inicio de la aplicación una vez que el usuario accede. Presenta una vista previa de la interfaz de mensajería, información general sobre la plataforma y las principales características de Ping, con un diseño moderno y organizado.
+---
 
-### styles.css;
+## Tecnologías utilizadas
 
-  Archivo que contiene todos los estilos del proyecto. Se encarga de definir la apariencia visual tanto de index.html como de home.html, incluyendo colores, tipografía, distribución de los elementos, botones, tarjetas y diseño adaptable (responsive), permitiendo mantener una apariencia uniforme en toda la aplicación.
+- HTML5
+- CSS3
+- Google Fonts (Poppins)
+
+---
+
+## Capturas
+
+----------- WIP ------------
+
+---
+
+## Autor
+
+**Emilio Rodríguez**
+**Rodolfo Sandoval**
+**Emilio Luna**
