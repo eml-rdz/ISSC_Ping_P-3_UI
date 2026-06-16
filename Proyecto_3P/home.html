@@ -1,84 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping | Home</title>
 
+    <title>Ping - Login</title>
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 
 <body>
 
-   <body>
+    <div class="login">
 
-    <header class="top-menu">
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#funciones">Funciones</a>
-            <a href="#contacto">Contacto</a>
-            <a href="login.html" class="salir">Salir</a>
-        </nav>
-    </header>
-
-    <main class="container">
-
-        <section class="hero">
-    <span class="tag">Mensajería moderna</span>
-
-    <h1>Conecta con tus amigos</h1>
-
-    <p>Ping es una interfaz simple y elegante para conversar rápido.</p>
-
-    <div class="buttons">
-        <a href="#" class="btn primary">Comenzar</a>
-        <a href="#funciones" class="btn secondary">Funciones</a>
-    </div>
-</section>
-
-<section class="chat-card">
-    <div class="chat-header">
-        <div class="user">
-            <div class="avatar"></div>
-            <div>
-                <h3>Elena Herrera</h3>
-                <p>Activa hace 20 m</p>
-            </div>
+        <div class="logo">
+            💬 
         </div>
-        <div class="chat-icons">☎ ✨</div>
+
+        <h1>Ping</h1>
+
+        <p>Inicia sesión para continuar</p>
+
+        <form action="home.html">
+
+            <label>Correo electrónico</label>
+
+            <input
+                type="email"
+                placeholder="ejemplo@correo.com"
+                required>
+
+            <label>Contraseña</label>
+
+            <input
+                type="password"
+                placeholder="********"
+                required>
+
+            <button type="submit">
+                Iniciar sesión
+            </button>
+
+        </form>
+
+        <div class="extra">
+
+            ¿No tienes cuenta?
+
+            <a href="#">Regístrate</a>
+
+        </div>
+
     </div>
-
-    <div class="messages">
-        <div class="message received">¿En serio?</div>
-        <div class="message sent">Es fácil</div>
-        <div class="message sent big">Solo escribes tu mensaje y listo.</div>
-        <div class="message received">Creo que entendí</div>
-    </div>
-
-    <div class="input-box">
-        <span>Escribe tu mensaje</span>
-        <span>😊 🖼️</span>
-    </div>
-</section>
-
-<section class="features" id="funciones">
-    <div class="feature-card">
-        <h3>Chats privados</h3>
-        <p>Comunicación rápida con tus contactos.</p>
-    </div>
-
-    <div class="feature-card">
-        <h3>Grupos</h3>
-        <p>Conversaciones para escuela o amigos.</p>
-    </div>
-</section>
-
-    </main>
-
-    <footer id="contacto">
-        © 2026 Ping. Todos los derechos reservados.
-    </footer>
 
 </body>
+
 </html>
