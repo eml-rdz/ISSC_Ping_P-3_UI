@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping | Dashboard Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-window">
+        <aside class="sidebar-left">
+            <div class="sidebar-header">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Buscar en chats">
+                </div>
+                <button class="btn-create-group" id="btnOpenGroupModal">
+                    + Crear grupo
+                </button>
+            </div>
+
+            <div class="chat-list">
+                <div class="chat-item active">
+                    <div class="avatar group-avatar-main"></div>
+                    <div class="chat-info">
+                        <div class="chat-name">Grupo chat grupal</div>
+                        <div class="chat-last-msg">Voy a ver el centro de ayuda...</div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="avatar user-avatar-1"></div>
+                    <div class="chat-info">
+                        <div class="chat-name">Carlo Emilio</div>
+                        <div class="chat-last-msg">Vamos</div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="avatar user-avatar-2"></div>
+                    <div class="chat-info">
+                        <div class="chat-name">Oscar David</div>
+                        <div class="chat-last-msg">Cieeeerto</div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="avatar user-avatar-3"></div>
+                    <div class="chat-info">
+                        <div class="chat-name">Daniel Pereyra</div>
+                        <div class="chat-last-msg">jajaj, sí. Vas al almuerzo el 13?</div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="avatar user-avatar-4"></div>
+                    <div class="chat-info">
+                        <div class="chat-name">Marco Rojas</div>
+                        <div class="chat-last-msg">fue lindo ponernos al día!</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-main-area">
+            <div class="chat-main-header">
+                <div class="members-avatars-row">
+                    <div class="member-circle avatar-m1"></div>
+                    <div class="member-circle avatar-m2"></div>
+                    <div class="member-circle avatar-m3"></div>
+                    <div class="member-circle avatar-m4"></div>
+                    <div class="member-circle avatar-m5"></div>
+                </div>
+                
+                <div class="call-status-overlay">
+                    <div class="btn-hangup">
+                        <span class="phone-icon">📞</span>
+                        <span class="hangup-x">✕</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages-container">
+                <div class="template-indicator">Esta es la plantilla de chat principal</div>
+
+                <div class="message bubble-received">En serio?</div>
+                <div class="message bubble-received">Genial</div>
+                <div class="message bubble-received">Cómo funciona?</div>
+
+                <div class="message bubble-sent">Es fácil</div>
+                <div class="message bubble-sent long-msg">Solo editas el texto para escribir en la conversación que quieres mostrar y eliminas las burbujas que no quieres usar</div>
+                <div class="message bubble-sent">Y listo!</div>
+            </div>
+
+            <div class="chat-input-wrapper">
+                <div class="chat-input-box">
+                    <input type="text" placeholder="Escribe tu mensaje">
+                    <div class="chat-input-icons">
+                        <span class="icon-item">🎙️</span>
+                        <span class="icon-item">😊</span>
+                        <span class="icon-item">🖼️</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="group-profile-section">
+                <div class="group-big-avatar"></div>
+                <h2 class="group-title">Grupo chat grupal</h2>
+                <p class="group-status">Activo hace 20 m</p>
+                <button class="btn-view-profile">Ver perfil</button>
+            </div>
+
+            <div class="group-members-section">
+                <div class="member-status-item">
+                    <div class="member-avatar avatar-m1"></div>
+                    <div class="status-badge">En línea</div>
+                </div>
+                <div class="member-status-item">
+                    <div class="member-avatar avatar-m2"></div>
+                    <div class="status-badge">En línea</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="modal-overlay" id="groupModal">
+        <div class="modal-container">
+            <div class="modal-header-tag">Crear grupo</div>
+            
+            <div class="modal-input-row">
+                <input type="text" placeholder="Introducir nombre del grupo o ID de usuarios." required>
+                <button class="btn-modal-accept" id="btnCloseGroupModal">aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.getElementById('btnOpenGroupModal');
+        const closeBtn = document.getElementById('btnCloseGroupModal');
+        const modal = document.getElementById('groupModal');
+
+        // Muestra el recuadro al dar clic en "Crear grupo"
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('show');
+        });
+
+        // Lo oculta al dar clic en "aceptar"
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+        });
+
+        // Opcional: Cerrar también si hacen clic fuera del recuadro negro
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+    </script>
+
+</body>
+</html>
